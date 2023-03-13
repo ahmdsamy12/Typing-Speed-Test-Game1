@@ -111,3 +111,12 @@ body {
 .finish .bad {
   color: red;
 }
+
+/* /////////////////// */
+.game .game-select {
+    background-color: white;
+    text-align: center;
+    color: var(--main-color);
+    padding: 10px;
+    font-weight: bold;
+}

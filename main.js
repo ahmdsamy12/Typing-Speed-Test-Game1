@@ -82,6 +82,35 @@ let timeLeftSpan = document.querySelector(".time span");
 let scoreGot = document.querySelector(".score .got");
 let scoreTotal = document.querySelector(".score .total");
 let finishMessage = document.querySelector(".finish");
+////////////////////////////////////////
+let easylev = document.getElementById("html");
+let normallev = document.getElementById("css");
+let hardlev = document.getElementById("javascript");
+
+easylev.onclick = function () {
+  defaultLevelName = "Easy";
+  defaultLevelSeconds = lvls[defaultLevelName];
+  lvlNameSpan.innerHTML = defaultLevelName;
+  secondsSpan.innerHTML = defaultLevelSeconds;
+timeLeftSpan.innerHTML = defaultLevelSeconds;
+}
+
+normallev.onclick = function () {
+  defaultLevelName = "Normal";
+  defaultLevelSeconds = lvls[defaultLevelName];
+  lvlNameSpan.innerHTML = defaultLevelName;
+  secondsSpan.innerHTML = defaultLevelSeconds;
+  timeLeftSpan.innerHTML = defaultLevelSeconds;
+};
+
+hardlev.onclick = function () {
+  defaultLevelName = "Hard";
+  defaultLevelSeconds = lvls[defaultLevelName];
+  lvlNameSpan.innerHTML = defaultLevelName;
+  secondsSpan.innerHTML = defaultLevelSeconds;
+  timeLeftSpan.innerHTML = defaultLevelSeconds;
+};
+
 
 // Setting Level Name + Seconds + Score
 lvlNameSpan.innerHTML = defaultLevelName;
